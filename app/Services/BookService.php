@@ -10,12 +10,12 @@ class BookService
 {
     public function createBook(array $data, ?UploadedFile $cover): Book
     {
-        // Обработка загрузки обложки
+
         $coverUrl = $cover
             ? $cover->store('covers', 'public')
             : 'defaults/default_cover.jpg';
 
-        // Создание книги
+
         return Book::create([
             'title' => $data['title'],
             'status' => false,

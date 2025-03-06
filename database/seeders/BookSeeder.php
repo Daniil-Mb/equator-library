@@ -18,7 +18,7 @@ class BookSeeder extends Seeder
         Book::create([
             'title' => 'Книга 2',
             'status' => true,
-            'cover_url' => 'covers/tipichnyi-muskul-car.jpg',
+            'cover_url' => 'covers/tNTaSWg1MT4FrpW8OPc8QHbwmxbUCNqbzrUs8ape.png',
         ]);
     }
 }
